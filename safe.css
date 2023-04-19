@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'My Font1';
+    src: url('font/Pretendard-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'My Font2';
+    src: url('font/Pretendard-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'My Font3';
+    src: url('font/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'My Font4';
+    src: url('font/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'My Font5';
+    src: url('font/Pretendard-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	z-index: 999;
+	background-color: transparent;
+	text-align: right; /* 메뉴를 우측 정렬 */
+	box-sizing: border-box;
+}
+
+.logo {
+	float: left; /* 로고를 왼쪽에 고정 */
+	margin-right: 50px;
+	font-size: 1.2rem;
+	font-family: 'My font3';
+	color: #333;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header a {
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'My Font2';
+}
+
+header a:hover{
+	color: #333;
+}
+
+footer {
+    background-color: #333;
+    padding: 30px;
+    color: #fff;
+    padding: 30px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 수평 중앙 정렬 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    height: 100vh;
+    padding: 100px;
+    /* background-image: url("img/bi.png");
+    background-size: cover; */
+}
+
+.menu li {
+    margin: 30px;
+}
+
+.menu li a {
+    font-family: 'My Font3';
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.2s ease-in-out;
+    text-align: center;
+
+}
+
+.menu p{
+    font-size: 26px;
+}
+
+.menu li a:hover {
+    font-family: 'My Font5';
+    font-size: 4rem;
+}
+
+.bb {
+	background-color: #fff;
+	color: #333;
+	padding: 12px 24px;
+	border-radius: 100px;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.bb:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+
+.oo{
+    display: flex;
+    margin: 200px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.square{
+    border: 1px solid #333;
+    padding: 100px;
+    margin: 100px;
+}
+
+.oo h2:hover{
+    border: 1px solid #fff;
+    background-color: #333;
+    padding: 100px;
+    margin: 100px;
+    color: #fff;
+}
+
+.one{
+    border: 1px solid #333;
+    padding: 100px;
+    border-radius: 800px;
+    margin: 100px;
+
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+  }
+  
+  .search-form button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-form button[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  

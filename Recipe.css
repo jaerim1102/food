@@ -1,0 +1,200 @@
+@font-face {
+	font-family: 'My Font1';
+	src: url('font/Pretendard-Light.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'My Font2';
+	src: url('font/Pretendard-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'My Font3';
+	src: url('font/Pretendard-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'My Font4';
+	src: url('font/Pretendard-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'My Font5';
+	src: url('font/Pretendard-Black.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 50px;
+	padding-right: 50px;
+	z-index: 999;
+	background-color: transparent;
+	text-align: left;
+	/* 메뉴를 우측 정렬 */
+	color: #fff;
+	box-sizing: border-box;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	z-index: 999;
+	background-color: transparent;
+	text-align: right; /* 메뉴를 우측 정렬 */
+	box-sizing: border-box;
+}
+
+.logo {
+	float: left; /* 로고를 왼쪽에 고정 */
+	margin-right: 50px;
+	font-size: 1.2rem;
+	font-family: 'My font3';
+	color: #fff;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'My Font2';
+}
+
+header a:hover{
+	color: #333;
+}
+footer {
+	background-color: #333;
+	padding: 30px;
+	color: #fff;
+	padding: 30px;
+}
+
+main{
+    color: #fff;
+    height: 1080px;
+    background-image: url("img/main2.jpg");
+}
+
+main h2{
+    font-family: 'My Font5';
+    font-size: 4rem;
+    text-align: center;
+    padding-top:20%;
+}
+
+main p{
+    text-align: center;
+    font-family: "My Font1";
+    padding-top: 2%;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.image-gallery {
+    
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+    margin-top: 150px;    
+    margin-bottom: 100px;    
+}
+
+.image-gallery h2 {
+	margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'My Font5';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.image-gallery ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.image-gallery li {
+	width: calc(33.33% - 20px);
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.image-gallery li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.image-gallery a {
+	display: block;
+	position: relative;
+}
+
+.image-gallery p{
+    margin: 15px;
+    font-family: 'My Font1';
+}
+
+.image-gallery img {
+	max-width: 100%;
+	height: 230px;
+    border-radius: 30px;
+}
+
+.image-gallery img:last-child {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.image-gallery a:hover img:first-child {
+	display: none;
+}
+
+.image-gallery a:hover img:last-child {
+	display: block;
+}
+
+.image-gallery-text {
+    top: 30px;
+
+	margin: 0;
+	padding: 10px;
+	transition: opacity 0.3s ease-in-out; /* 투명도 변화 애니메이션 효과 */
+}
+
+.image-gallery a:hover .image-gallery-text {
+	opacity: 1; /* 마우스 호버 시 텍스트가 유지되도록 투명도 1로 설정 */
+}
